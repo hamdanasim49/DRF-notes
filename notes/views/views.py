@@ -3,7 +3,11 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 from notes.models.models import Notes
-from ..serializers.serializers import NotesSerializer, UserSerializer, RegisterSerializer
+from ..serializers.serializers import (
+    NotesSerializer,
+    UserSerializer,
+    RegisterSerializer,
+)
 from django.contrib.auth.models import User
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import generics
